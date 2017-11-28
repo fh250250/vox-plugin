@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    poster:
+        label: 封面
+        type: partial
+        path: $/vox/video/models/vod/_poster_column.htm
+        sortable: false
+    title:
+        label: 标题
+        searchable: true
+        sortable: false
+    category_title:
+        label: 分类
+        relation: category
+        select: title
+        sortable: false
+    created_at:
+        label: 创建于
+        type: timesince
+    updated_at:
+        label: 修改于
+        type: timesince

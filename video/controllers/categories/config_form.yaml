@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Category
+
+# Model Form Field configuration
+form: $/vox/video/models/category/fields.yaml
+
+# Model Class name
+modelClass: Vox\Video\Models\Category
+
+# Default redirect location
+defaultRedirect: vox/video/categories
+
+# Create page
+create:
+    title: Create Category
+    redirect: vox/video/categories/update/:id
+    redirectClose: vox/video/categories
+
+# Update page
+update:
+    title: Edit Category
+    redirect: vox/video/categories
+    redirectClose: vox/video/categories
+
+# Preview page
+preview:
+    title: Preview Category

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Vod
+
+# Model Form Field configuration
+form: $/vox/video/models/vod/fields.yaml
+
+# Model Class name
+modelClass: Vox\Video\Models\Vod
+
+# Default redirect location
+defaultRedirect: vox/video/vods
+
+# Create page
+create:
+    title: 创建
+    redirect: vox/video/vods/update/:id
+    redirectClose: vox/video/vods
+
+# Update page
+update:
+    title: 编辑
+    redirect: vox/video/vods
+    redirectClose: vox/video/vods
+
+# Preview page
+preview:
+    title: Preview Vod

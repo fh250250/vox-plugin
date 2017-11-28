@@ -1,0 +1,17 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+# Reorder Title
+title: 分类排序
+
+# Attribute name
+nameFrom: title
+
+# Model Class name
+modelClass: Vox\Video\Models\Category
+
+# Toolbar widget configuration
+# toolbar:
+    # Partial for toolbar buttons
+    # buttons: reorder_toolbar

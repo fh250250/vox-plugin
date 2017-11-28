@@ -1,0 +1,7 @@
+1.0.1:
+  - Create Table
+  - create_vods_table.php
+  - create_categories_table.php
+1.0.2:
+  - Seed Data
+  - seed_categories_table.php

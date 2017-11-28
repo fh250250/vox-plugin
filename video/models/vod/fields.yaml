@@ -1,0 +1,26 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: 标题
+        span: left
+    poster:
+        label: 封面
+        type: fileupload
+        span: right
+        mode: image
+        imageWidth: 200
+        imageHeight: 200
+        useCaption: false
+    category:
+        label: 分类
+        type: relation
+        span: left
+        nameFrom: title
+    downloads:
+        label: 下载信息
+        type: repeater
+        prompt: 增加下载信息
+        groups: $/vox/video/models/vod/_downloads_fields.yaml

@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    sort_order:
+        invisible: true
+    title:
+        label: 标题
+        searchable: true
+    vods_count:
+        label: 视频个数
+        type: partial
+        path: $/vox/video/models/category/_vods_count_column.htm

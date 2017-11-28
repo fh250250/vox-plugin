@@ -1,0 +1,18 @@
+baidu:
+    name: 百度网盘
+    description: 百度网盘
+    icon: icon-paw
+    fields:
+        url:
+            label: 百度网盘链接
+            span: left
+        code:
+            label: 提取码
+            span: right
+online:
+    name: 在线观看
+    description: 在线观看
+    icon: icon-film
+    fields:
+        url:
+            label: 在线观看链接
