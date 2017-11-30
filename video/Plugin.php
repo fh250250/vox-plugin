@@ -108,4 +108,19 @@ class Plugin extends PluginBase
             ],
         ];
     }
+
+    public function registerSettings()
+    {
+        return [
+            'settings' => [
+                'label'       => '配置',
+                'description' => '影视相关配置',
+                'category'    => '影视',
+                'icon'        => 'icon-cog',
+                'order'       => 500,
+                'class'       => 'Vox\Video\Models\Settings',
+                'permissions' => ['vox.video.settings'],
+            ]
+        ];
+    }
 }

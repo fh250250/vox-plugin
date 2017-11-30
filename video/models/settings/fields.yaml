@@ -1,0 +1,25 @@
+fields:
+  app_id:
+    label: APP ID
+    span: left
+  token:
+    label: Token
+    span: right
+  secret:
+    label: APP Secret
+    span: left
+  aes_key:
+    label: AES Key
+    span: right
+  default_message:
+    label: 默认消息
+    span: left
+    type: codeeditor
+    size: huge
+    language: html
+  subscribe_message:
+    label: 订阅消息
+    span: right
+    type: codeeditor
+    size: huge
+    language: html
