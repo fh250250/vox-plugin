@@ -1,6 +1,7 @@
 <?php namespace Vox\Video\Models;
 
 use Model;
+use Db;
 
 /**
  * Vod Model
@@ -49,4 +50,19 @@ class Vod extends Model
     ];
 
     protected $jsonable = ['downloads'];
+
+    public function incrementViewCount()
+    {
+        Db::table($this->table)
+            ->where('id', '=', $this->id)
+            ->increment('view_count');
+    }
+
+    public static function findByCategoryID($category_id)
+    {
+        return self::where('category_id', '=', $category_id)
+                    ->with('poster')
+                    ->orderBy('view_count', 'desc')
+                    ->simplePaginate(20);
+    }
 }

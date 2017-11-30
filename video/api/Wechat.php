@@ -51,7 +51,7 @@ class Wechat extends Controller
 
     $vods = Vod::where('title', 'like', '%' . $content . '%')
                 ->with('poster')
-                ->orderBy('updated_at', 'desc')
+                ->orderBy('view_count', 'desc')
                 ->limit(8)
                 ->get();
 

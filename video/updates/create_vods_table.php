@@ -13,6 +13,7 @@ class CreateVodsTable extends Migration
             $table->increments('id');
             $table->string('title', 128)->unique();
             $table->integer('category_id')->unsigned();
+            $table->integer('view_count')->unsigned()->default(0);
             $table->text('downloads');
             $table->timestamps();
         });

@@ -23,3 +23,6 @@ columns:
     updated_at:
         label: 修改于
         type: timesince
+    view_count:
+        label: 访问量
+        type: number
