@@ -5,3 +5,6 @@
 1.0.2:
   - Seed Data
   - seed_categories_table.php
+1.0.3:
+  - Add Demand
+  - create_demands_table.php

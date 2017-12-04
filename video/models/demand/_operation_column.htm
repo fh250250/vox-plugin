@@ -1,0 +1,8 @@
+
+<button
+  class="btn btn-danger"
+  onclick="$(this).data('request-data', { checked: [<?= $record->id ?>] })"
+  data-request="onDelete"
+  data-stripe-load-indicator>
+  删除
+</button>

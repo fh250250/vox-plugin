@@ -73,6 +73,10 @@ class Plugin extends PluginBase
                 'tab' => '影视',
                 'label' => '管理分类'
             ],
+            'vox.video.demands' => [
+                'tab' => '影视',
+                'label' => '管理请求'
+            ]
         ];
     }
 
@@ -103,6 +107,12 @@ class Plugin extends PluginBase
                         'url' => Backend::url('vox/video/vods'),
                         'icon' => 'icon-cubes',
                         'permissions' => ['vox.video.vods']
+                    ],
+                    'demands' => [
+                        'label' => '请求',
+                        'url' => Backend::url('vox/video/demands'),
+                        'icon' => 'icon-commenting-o',
+                        'permissions' => ['vox.video.demands']
                     ],
                 ]
             ],

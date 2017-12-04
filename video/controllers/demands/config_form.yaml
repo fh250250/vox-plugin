@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Demand
+
+# Model Form Field configuration
+form: $/vox/video/models/demand/fields.yaml
+
+# Model Class name
+modelClass: Vox\Video\Models\Demand
+
+# Default redirect location
+defaultRedirect: vox/video/demands
+
+# Create page
+create:
+    title: Create Demand
+    redirect: vox/video/demands/update/:id
+    redirectClose: vox/video/demands
+
+# Update page
+update:
+    title: Edit Demand
+    redirect: vox/video/demands
+    redirectClose: vox/video/demands
+
+# Preview page
+preview:
+    title: Preview Demand

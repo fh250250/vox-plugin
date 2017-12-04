@@ -5,6 +5,7 @@ use EasyWeChat\Foundation\Application;
 use EasyWeChat\Message\News;
 use Vox\Video\Models\Settings;
 use Vox\Video\Models\Vod;
+use Vox\Video\Models\Demand;
 
 class Wechat extends Controller
 {
@@ -47,7 +48,10 @@ class Wechat extends Controller
   {
     $content = trim($message->Content);
 
-    if (strlen($content) < 2) { return Settings::get('default_message'); }
+    if (strlen($content) < 2 || strlen($content) > 100) {
+      // 太短或太长
+      return Settings::get('default_message');
+    }
 
     $vods = Vod::where('title', 'like', '%' . $content . '%')
                 ->with('poster')
@@ -55,7 +59,11 @@ class Wechat extends Controller
                 ->limit(8)
                 ->get();
 
-    if (!count($vods)) { return Settings::get('default_message'); }
+    if (!count($vods)) {
+      // 未搜索到结果
+      Demand::addDemand($content, '微信公众号');
+      return Settings::get('default_message');
+    }
 
     return $vods->map(function ($vod) {
       return new News([

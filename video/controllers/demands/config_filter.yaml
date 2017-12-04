@@ -1,0 +1,10 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    from:
+        label: 来源
+        modelClass: Vox\Video\Models\Demand
+        conditions: vox_video_demands.from in (:filtered)
+        options: getFilterFromOptions
