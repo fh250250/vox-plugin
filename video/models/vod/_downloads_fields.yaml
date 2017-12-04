@@ -16,3 +16,10 @@ online:
     fields:
         url:
             label: 在线观看链接
+magnet:
+    name: 磁力链接
+    description: 磁力链接
+    icon: icon-magnet
+    fields:
+        url:
+            label: 磁力链接
