@@ -76,7 +76,11 @@ class Plugin extends PluginBase
             'vox.video.demands' => [
                 'tab' => '影视',
                 'label' => '管理请求'
-            ]
+            ],
+            'vox.video.settings' => [
+                'tab' => '影视',
+                'label' => '配置'
+            ],
         ];
     }
 
