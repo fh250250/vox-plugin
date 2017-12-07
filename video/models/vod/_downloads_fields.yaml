@@ -23,3 +23,10 @@ magnet:
     fields:
         url:
             label: 磁力链接
+thunder:
+    name: 迅雷下载
+    description: 迅雷下载链接
+    icon: icon-paper-plane
+    fields:
+        url:
+            label: 迅雷链接
