@@ -62,7 +62,7 @@ class Vod extends Model
     {
         return self::where('category_id', '=', $category_id)
                     ->with('poster')
-                    ->orderBy('view_count', 'desc')
+                    ->orderBy('updated_at', 'desc')
                     ->simplePaginate(20);
     }
 }
