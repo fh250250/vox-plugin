@@ -15,8 +15,3 @@ columns:
     count:
         label: 次数
         type: number
-    operation:
-        label: 操作
-        sortable: false
-        type: partial
-        path: $/vox/video/models/demand/_operation_column.htm
